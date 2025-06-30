@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nick & Lauren's Wedding RSVP</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+      padding: 2em;
+      max-width: 600px;
+      margin: auto;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #3d2c1e;
+      text-shadow: 1px 1px 2px white;
+    }
+    form {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 1.5em;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 1em;
+      font-weight: bold;
+    }
+    input, textarea, select, button {
+      width: 100%;
+      padding: 0.5em;
+      margin-top: 0.5em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #c69c6d;
+      color: white;
+      font-size: 1em;
+      margin-top: 1.5em;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #b3885a;
+    }
+  </style>
+</head>
+<body>
+  <h1>Nick & Lauren's Wedding</h1>
+  <h2>Thursday 12th March 2026</h2>
+  <p style="text-align: center; font-weight: bold; background: rgba(255,255,255,0.8); padding: 0.5em; border-radius: 5px;">Wootton Hall, Barton Rd, Wootton, Ulceby DN39 6RN</p>
+
+  <form action="https://formsubmit.co/nickmapley@hotmail.co.uk" method="POST">
+    <input type="hidden" name="_subject" value="New Wedding RSVP!">
+    <input type="hidden" name="_template" value="table">
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="attending">Will you attend?</label>
+    <select id="attending" name="attending" required>
+      <option value="Yes">Yes, I’ll be there!</option>
+      <option value="No">Sorry, I can't make it</option>
+    </select>
+
+    <label for="diet">Any dietary requirements?</label>
+    <textarea id="diet" name="diet" rows="3"></textarea>
+
+    <button type="submit">Send RSVP</button>
+  </form>
+</body>
+</html>
+
+
